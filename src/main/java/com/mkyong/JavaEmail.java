@@ -1,4 +1,4 @@
-package com.mkyong;
+package com.connecting2java;
 import java.util.Properties;
  
 import javax.mail.Message;
