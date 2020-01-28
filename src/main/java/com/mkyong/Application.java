@@ -1,4 +1,4 @@
-package com.mkyong;
+package com.connecting2java;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -46,7 +46,7 @@ public class Application implements CommandLineRunner {
     void sendEmail() {
 
         SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setTo("connecting2deepak@gmail.com");
+        msg.setTo("connecting2java@gmail.com");
 
         msg.setSubject("Testing from Spring Boot");
         msg.setText("Hello World \n Spring Boot Email");
@@ -61,7 +61,7 @@ public class Application implements CommandLineRunner {
 
         // true = multipart message
         MimeMessageHelper helper = new MimeMessageHelper(msg, true);
-        helper.setTo("connecting2deepak@gmail.com");
+        helper.setTo("connecting2java@gmail.com");
 
         helper.setSubject("Testing from Spring Boot");
 
